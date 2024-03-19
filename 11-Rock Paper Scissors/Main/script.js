@@ -7,7 +7,7 @@ const options = ["R", "P", "S"];
 
 const playGame = function() {
   // Ask user for their choice
-  const userChoice = window.prompt("Enter R, P, or S:");
+  let userChoice = window.prompt("Enter R, P, or S:");
 
   // If user pressed Cancel, immediately end function
   if (!userChoice) {
