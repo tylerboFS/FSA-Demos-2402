@@ -1,17 +1,17 @@
-var wins = 0;
-var losses = 0;
-var ties = 0;
+let wins = 0;
+let losses = 0;
+let ties = 0;
 
-var computerResponses = ['R', 'P', 'S'];
+const computerResponses = ['R', 'P', 'S'];
 
-var playAgain = true;
+let playAgain = true;
 
 while (playAgain) {
-    var userResponse = prompt("Enter R, P, or S").toUpperCase();
+    const userResponse = prompt("Enter R, P, or S").toUpperCase();
 
-    var compIndex = Math.floor(Math.random() * computerResponses.length);
+    const compIndex = Math.floor(Math.random() * computerResponses.length);
 
-    var compResponse = computerResponses[compIndex];
+    const compResponse = computerResponses[compIndex];
 
     alert("The Computer chose: " + compResponse);
 

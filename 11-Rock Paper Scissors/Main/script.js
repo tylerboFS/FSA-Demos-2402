@@ -1,13 +1,13 @@
-var wins = 0;
-var ties = 0;
-var losses = 0;
+let wins = 0;
+let ties = 0;
+let losses = 0;
 
 // Array of options for computer to pick from
-var options = ["R", "P", "S"];
+const options = ["R", "P", "S"];
 
-var playGame = function() {
+const playGame = function() {
   // Ask user for their choice
-  var userChoice = window.prompt("Enter R, P, or S:");
+  const userChoice = window.prompt("Enter R, P, or S:");
 
   // If user pressed Cancel, immediately end function
   if (!userChoice) {
@@ -18,8 +18,8 @@ var playGame = function() {
   userChoice = userChoice.toUpperCase();
 
   // Get random index from array of options
-  var index = Math.floor(Math.random() * options.length);
-  var computerChoice = options[index];
+  const index = Math.floor(Math.random() * options.length);
+  const computerChoice = options[index];
 
   window.alert("The computer chose " + computerChoice);
 
@@ -49,7 +49,7 @@ var playGame = function() {
   );
 
   // Ask user to play again
-  var playAgain = window.confirm("Play again?");
+  const playAgain = window.confirm("Play again?");
 
   // If user pressed OK, run the function again
   if (playAgain) {
